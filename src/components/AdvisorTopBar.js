@@ -7,10 +7,9 @@ import aContext from '../context/aContext';
 const AdvisorTopBar = () => {
     const context = useContext(aContext);
     const { active, sideBarList } = context;
-    console.log(active)
   return (
     <Box>
-        <Box sx={{ width: '80.5vw', height: '4vw', display: 'flex', alignItems: 'center', justifyContent: 'space-between', boxSizing: 'border-box'}} px={{xl: 6, lg: 3, sm: 2}} mt={{xl: 4, lg: 3, sm: 2}}>
+        <Box style={{fontFamily: 'Poppins, sans-serif'}} sx={{ width: '80.5vw', height: '4vw', display: 'flex', alignItems: 'center', justifyContent: 'space-between', boxSizing: 'border-box'}} px={{xl: 6, lg: 3, sm: 2}} mt={{xl: 4, lg: 2, sm: 2}}>
             <Box sx={{ disply: 'flex', alignItems: 'space-between', justifyContent: 'space-between', flexDirection: 'column', color: '#27364E', width: '40vw'}}>
                 <Box><Typography variant='h4' sx={{ fontWeight: 600, fontSize: '1.75vw' }}>{(sideBarList.find(item => item.text === active) || { subText: '' }).text}</Typography></Box>
                 <Box sx={{ marginTop: '1vw' }}><Typography variant='h4' sx={{ fontWeight: 400, fontSize: '1vw' }}>{(sideBarList.find(item => item.text === active) || { subText: '' }).subText}</Typography></Box>

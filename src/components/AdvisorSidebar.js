@@ -7,8 +7,8 @@ const AdvisorSidebar = () => {
     const context = useContext(aContext);
     const { active, setActive, sideBarList } = context;
   return (
-    <Box style={{ fontFamily: 'Poppins, sans-serif', height: '100vh', width: '19.5vw', boxSizing: 'border-box' }} 
-    px={3} py={3}
+    <Box style={{ fontFamily: 'Poppins, sans-serif', height: '100vh', width: '21vw', boxSizing: 'border-box' }} 
+    pl={{xl: 3, lg: 1.5, sm: 1}} py={{xl: 3, lg: 1.5, sm: 1}}
     >
         <Box sx={{ bgcolor: 'rgba(0,0,0,0.05)', width: '100%', height: '100%', borderRadius: '2vw', boxSizing: 'border-box' }} px={{xl: 4, lg: 2, sm: 1}}>
             <Box sx={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }} py={3}>

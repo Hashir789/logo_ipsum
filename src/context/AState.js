@@ -52,8 +52,47 @@ const AState = (props) =>{
             id: 6
         }
     ]
+    const chats = [
+        {
+            Image: '',
+            name: 'Lorem',
+            date: '20/01/21'
+        },
+        {
+            Image: '',
+            name: 'Lorem',
+            date: '24/01/21'
+        },
+        {
+            Image: '',
+            name: 'Lorem',
+            date: '27/01/21'
+        },
+        {
+            Image: '',
+            name: 'Lorem',
+            date: '30/01/21'
+        }
+    ]
+    const homeCards = [
+        {
+            heading: 'Total Request',
+            num: '19',
+            text: ''
+        },
+        {
+            heading: 'Closed Request',
+            num: '02',
+            text: '25% this month'
+        },
+        {
+            heading: 'Avg. time per request',
+            num: '02',
+            text: '-10% this month'
+        }
+    ]
   return(
-        <AContext.Provider value={{active, setActive, sideBarList}}>
+        <AContext.Provider value={{active, setActive, sideBarList, chats, homeCards}}>
             {props.children}
         </AContext.Provider>
     )
