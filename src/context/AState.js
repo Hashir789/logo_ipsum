@@ -11,43 +11,42 @@ const AState = (props) =>{
     const [active, setActive] = useState('Home');
     const sideBarList = [
         {
-            logo: <GoHome style={{ height: '24px', width: '21px' }}/>,
+            logo: <GoHome style={{ width: '1.5vw', height: '1.5vw' }}/>,
             text: 'Home',
             subText: 'Welcome to Farm DSS Advisor Panel',
-            id: 0
         },
         {
-            logo: <AiOutlineComment style={{ height: '28px', width: '28px' }}/>,
+            logo: <AiOutlineComment style={{ width: '1.5vw', height: '1.5vw' }}/>,
             text: 'All Request',
             subText: 'Farm DSS Advisor Panel',
             id: 1
         },
         {
-            logo: <AiOutlineUser style={{ height: '28px', width: '28px' }}/>,
+            logo: <AiOutlineUser style={{ height: '1.5vw', width: '1.5vw' }}/>,
             text: 'Assigned Requests',
             subText: 'Farm DSS Advisor Panel',
             id: 2
         },
         {
-            logo: <PiSquaresFourLight style={{ height: '28px', width: '28px' }}/>,
+            logo: <PiSquaresFourLight style={{ height: '1.5vw', width: '1.5vw' }}/>,
             text: 'Consultation',
             subText: 'Farm DSS Advisor Panel',
             id: 3
         },
         {
-            logo: <DescriptionOutlinedIcon style={{ height: '23px', width: '23px' }}/>,
+            logo: <DescriptionOutlinedIcon style={{ height: '1.5vw', width: '1.5vw' }}/>,
             text: 'Knowledge Base',
             subText: 'Farm DSS Advisor Panel',
             id: 4
         },
         {
-            logo: <HiOutlineUsers style={{ height: '23px', width: '23px' }}/>,
+            logo: <HiOutlineUsers style={{ height: '1.5vw', width: '1.5vw' }}/>,
             text: 'Users',
             subText: 'Farm DSS Advisor Panel',
             id: 5
         },
         {
-            logo: <CiUser style={{ height: '23px', width: '23px' }}/>,
+            logo: <CiUser style={{ height: '1.5vw', width: '1.5vw' }}/>,
             text: 'Profile',
             subText: 'Farm DSS Advisor Panel',
             id: 6
